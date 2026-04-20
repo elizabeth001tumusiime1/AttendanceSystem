@@ -1,6 +1,10 @@
-import type { SchemaObject } from "../../types";
-export type SchemaObjectMap = {
-    [Ref in string]?: SchemaObject;
-};
-export declare const jtdForms: readonly ["elements", "values", "discriminator", "properties", "optionalProperties", "enum", "type", "ref"];
-export type JTDForm = (typeof jtdForms)[number];
+import type { ErrorObject } from "../../types";
+export declare enum DiscrError {
+    Tag = "tag",
+    Mapping = "mapping"
+}
+export type DiscrErrorObj<E extends DiscrError> = ErrorObject<"discriminator", {
+    error: E;
+    tag: string;
+    tagValue: unknown;
+}, string>;

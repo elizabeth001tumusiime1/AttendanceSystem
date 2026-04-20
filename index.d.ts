@@ -1,2 +1,3 @@
-import type Ajv from "../../core";
-export default function addMetaSchema2020(this: Ajv, $data?: boolean): Ajv;
+import type { Vocabulary } from "../../types";
+declare const dynamic: Vocabulary;
+export default dynamic;

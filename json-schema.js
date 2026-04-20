@@ -1,3 +1,3 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//# sourceMappingURL=jtd-schema.js.map
+//# sourceMappingURL=json-schema.js.map
